@@ -1,0 +1,306 @@
+ * {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-style: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #D4D4D4;  
+    background-image: url('../images/circuit.png');
+    background-repeat: ;
+    resize: all;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* Fake image, just for this example */
+.background { 
+    background-image: url("assets/images/circuit.png");
+    width: 100%;
+    padding: 20px;
+    flex: 1 0 auto;
+
+}
+
+.main-con-box {
+	background-color: #ffffff;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 2px;
+    max-width: 960px;;
+    margin-top: 40px;
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;;
+}
+
+/*Top Header*/
+
+r {
+    position: static;   
+    background-color: #ffffff;
+    border-color: #cccccc;
+    border-radius: 0px;
+    border-bottom-width: 2px;
+    border-style: solid;
+    width: auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+
+
+
+}
+
+/*Nav bar Links*/
+
+
+ul.topnav {
+    top: 0;
+    float: left;
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: teal;
+}
+
+ul.topnav li {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+    float: left;
+
+}
+
+
+/*Title of main content*/
+
+h2 {
+    font-size: 28px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+/*Border underneath title of content*/
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    max-width: 915px;
+}
+
+.heading {
+    color:#4aaaa5;
+}
+
+
+/*About Me Page*/
+
+#port-pic {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+#bio {
+    line-height: 2.0;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    
+}
+
+/*Contact me page*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Portfolio*/
+
+.container-port { 
+    margin-bottom: 20px;
+
+}
+
+
+
+img {
+    width: 100%;
+}
+
+div.caption-text {
+    opacity: 10%;
+    background-color: 	rgb(0,128,128, .6);
+    width: auto;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    width: 466px;
+    text-align: center;
+    overflow: hidden;
+    down: 10%;
+    
+
+}
+
+a img {
+    height: 250px;
+    flex-wrap: wrap;
+}
+
+
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    justify-content: center;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: #666666;
+}
+
+.teal {
+    background-color: #4aaaa5;
+    height: 5px;
+    width: 100%;
+    text-align: center;
+    flex-shrink: 0;
+    bottom: 0;
+
+}
+
+/* Create two equal columns that sits next to each other */
+
+.column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    padding: 0 4px;
+    margin: 0 auto;
+}
+
+/* Responsive layout - makes a one column-layout instead of two columns */
+
+@media screen and (max-width: 250px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+            }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
